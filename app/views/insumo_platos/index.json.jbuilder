@@ -1,0 +1,1 @@
+json.array! @insumo_platos, partial: 'insumo_platos/insumo_plato', as: :insumo_plato

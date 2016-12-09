@@ -1,0 +1,1 @@
+json.partial! "proveedor_insumos/proveedor_insumo", proveedor_insumo: @proveedor_insumo

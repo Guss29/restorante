@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidadusada:</strong>
+  <%= @insumo_plato.cantidadusada %>
+</p>
+
+<p>
+  <strong>Unidadmedida:</strong>
+  <%= @insumo_plato.unidadmedida %>
+</p>
+
+<p>
+  <strong>Insumo:</strong>
+  <%= @insumo_plato.insumo %>
+</p>
+
+<p>
+  <strong>Plato:</strong>
+  <%= @insumo_plato.plato %>
+</p>
+
+<%= link_to 'Edit', edit_insumo_plato_path(@insumo_plato) %> |
+<%= link_to 'Back', insumo_platos_path %>

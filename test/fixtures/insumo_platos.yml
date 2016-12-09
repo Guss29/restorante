@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidadusada: 1
+  unidadmedida: MyString
+  insumo: one
+  plato: one
+
+two:
+  cantidadusada: 1
+  unidadmedida: MyString
+  insumo: two
+  plato: two

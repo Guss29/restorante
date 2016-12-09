@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  tipo: MyString
+  subtotal: 1
+  iva: 1
+  propina: 1
+  total: 1
+  fecha: MyString
+  pedido: one
+
+two:
+  numero: 1
+  tipo: MyString
+  subtotal: 1
+  iva: 1
+  propina: 1
+  total: 1
+  fecha: MyString
+  pedido: two

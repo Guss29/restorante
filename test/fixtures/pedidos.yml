@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipopedido: MyString
+  fecha: MyString
+  empleado: one
+
+two:
+  tipopedido: MyString
+  fecha: MyString
+  empleado: two

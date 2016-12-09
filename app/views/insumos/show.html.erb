@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @insumo.nombre %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @insumo.cantidad %>
+</p>
+
+<p>
+  <strong>Unidadmedida:</strong>
+  <%= @insumo.unidadmedida %>
+</p>
+
+<%= link_to 'Edit', edit_insumo_path(@insumo) %> |
+<%= link_to 'Back', insumos_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  precio: 1
+  proveedor: one
+  insumo: one
+
+two:
+  precio: 1
+  proveedor: two
+  insumo: two

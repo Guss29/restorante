@@ -1,0 +1,1 @@
+json.array! @proveedor_insumos, partial: 'proveedor_insumos/proveedor_insumo', as: :proveedor_insumo

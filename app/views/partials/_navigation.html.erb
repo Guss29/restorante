@@ -7,20 +7,23 @@
   				<li class="col-md">
   					<%= link_to "Inicio", root_path%>
   				</li>
+          <li class="col-md">
+            <%= link_to "Proveedores", proveedors_path %>
+          </li>
   				<li class="col-md">
-  					Empleados
+  					<%= link_to "Empleados", empleados_path %>
   				</li>
   				<li class="col-md">
-  					Platos
+  					<%= link_to "Platos", platos_path %>
   				</li>
   				<li class="col-md">
-  					Ingredientes
+  					<%= link_to "Ingredientes", insumos_path %>
   				</li>
           <li class="col-md">
-            Pedidos
+            <%= link_to "Pedidos", pedidos_path %>
           </li>
           <li class="col-md">
-            Ventas
+            <%= link_to "Mesa", mesas_path %>
           </li>
           <% if user_signed_in? %>
             <li class="col-md">

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @ventum.numero %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @ventum.tipo %>
+</p>
+
+<p>
+  <strong>Subtotal:</strong>
+  <%= @ventum.subtotal %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @ventum.iva %>
+</p>
+
+<p>
+  <strong>Propina:</strong>
+  <%= @ventum.propina %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @ventum.total %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @ventum.fecha %>
+</p>
+
+<p>
+  <strong>Pedido:</strong>
+  <%= @ventum.pedido %>
+</p>
+
+<%= link_to 'Edit', edit_ventum_path(@ventum) %> |
+<%= link_to 'Back', venta_path %>
