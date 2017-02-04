@@ -17,7 +17,7 @@
       <tr>
         <td><%= pedido.tipopedido %></td>
         <td><%= pedido.fecha %></td>
-        <td><%= pedido.empleado %></td>
+        <td><%= pedido.empleado.nombre %></td>
         <td><%= link_to 'Show', pedido %></td>
         <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
         <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>

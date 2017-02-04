@@ -69,6 +69,6 @@ class PlatosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def plato_params
-      params.require(:plato).permit(:nombre, :precio, :tipo, :descripcion)
+      params.require(:plato).permit(:nombre, :precio, :tipo, :descripcion, :cantidad)
     end
 end

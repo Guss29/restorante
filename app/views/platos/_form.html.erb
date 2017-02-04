@@ -30,7 +30,17 @@
     <%= f.label :descripcion %>
     <%= f.text_area :descripcion %>
   </div>
-
+  <div class="field">
+    <%= f.label :cantidad %>
+    <%= f.number_field :cantidad %>
+  </div>
+    <div class="field">
+      <%= f.select :insumos,
+        Insumo.all.map { |u| [u.nombre, u.id] },
+               { include_blank: true },
+               { class: 'chosen-select' }
+      %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

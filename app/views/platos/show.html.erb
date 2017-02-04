@@ -19,6 +19,15 @@
   <strong>Descripcion:</strong>
   <%= @plato.descripcion %>
 </p>
-
+<p>
+  <strong>Cantidad:</strong>
+  <%= @plato.cantidad %>
+</p>
+<p>
+  <strong>Ingredientes:</strong>
+  <% @plato.insumos.each do |insumo| %>
+    <%= insumo.nombre%>
+  <%end%>
+</p>
 <%= link_to 'Edit', edit_plato_path(@plato) %> |
 <%= link_to 'Back', platos_path %>
