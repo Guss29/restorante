@@ -1,42 +1,39 @@
 <header>
-  		<nav class="be-red white large-padding">
-  			<ul class="no-list row center-xs middle-xs">
-  				<li class="col-md">
-  					<h1 class="no-margin" id="logo"> Restorante</h1>
-  				</li>
-  				<li class="col-md">
-  					<%= link_to "Inicio", root_path%>
-  				</li>
-          <li class="col-md">
-            <%= link_to "Proveedores", proveedors_path %>
-          </li>
-  				<li class="col-md">
-  					<%= link_to "Empleados", empleados_path %>
-  				</li>
-  				<li class="col-md">
-  					<%= link_to "Platos", platos_path %>
-  				</li>
-  				<li class="col-md">
-  					<%= link_to "Ingredientes", insumos_path %>
-  				</li>
-          <li class="col-md">
-            <%= link_to "Pedidos", pedidos_path %>
-          </li>
-          <li class="col-md">
-            <%= link_to "Mesa", mesas_path %>
+      <nav class='white-text fixed right top up main-nav' id='navigation'>
+        <ul class='list-inline'>
+          <li class='medium'>
+            <%= link_to "Inicio", root_path%>
           </li>
           <% if user_signed_in? %>
-            <li class="col-md">
-              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
+            <li class='medium'>
+              <%= link_to "Proveedores", proveedors_path %>
             </li>
+            <li class='medium'>
+              <%= link_to "Empleados", empleados_path %>
+            </li>
+            <li class='medium'>
+              <%= link_to "Platos", platos_path %>
+            </li>
+            <li class='medium'>
+              <%= link_to "Ingredientes", insumos_path %>
+            </li>
+            <li class='medium'>
+              <%= link_to "Pedidos", pedidos_path %>
+            </li>
+            <li class='medium'>
+              <%= link_to "Mesa", mesas_path %>
+            </li>
+            <li class='medium'>
+              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
+           </li>
           <%else%>
-            <li class="col-md">
+            <li class='medium'>
               <%= link_to "Iniciar sesión", new_user_session_path %>
             </li>
-            <li class="col-md">
+            <li class='medium'>
               <%= link_to "Crear cuenta", new_user_registration_path %>
             </li>  
           <%end%>
-  			</ul>
-  		</nav>
+        </ul>
+      </nav>
 </header>	
