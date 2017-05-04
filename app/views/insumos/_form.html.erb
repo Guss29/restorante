@@ -1,4 +1,4 @@
-<%= form_for(insumo) do |f| %>
+<%= simple_form_for(insumo) do |f| %>
   <% if insumo.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(insumo.errors.count, "error") %> prohibited this insumo from being saved:</h2>
@@ -10,23 +10,10 @@
       </ul>
     </div>
   <% end %>
+  <%= f.input :nombre %>
+  <%= f.input :cantidad %>
+  <%= f.input :unidadmedida, :as => :select, :collection => [["Kg","Kg"], ["Lt","Lt"]]
+ %>
 
-  <div class="field">
-    <%= f.label :nombre %>
-    <%= f.text_field :nombre %>
-  </div>
-
-  <div class="field">
-    <%= f.label :cantidad %>
-    <%= f.number_field :cantidad %>
-  </div>
-
-  <div class="field">
-    <%= f.label :unidadmedida %>
-    <%= f.text_field :unidadmedida %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.button :submit %>
 <% end %>

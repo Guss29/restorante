@@ -2,7 +2,7 @@
 
 <h1>Empleados</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Rut</th>
@@ -24,14 +24,21 @@
         <td><%= empleado.direccion %></td>
         <td><%= empleado.cargo %></td>
         <td><%= empleado.turno %></td>
-        <td><%= link_to 'Show', empleado %></td>
-        <td><%= link_to 'Edit', edit_empleado_path(empleado) %></td>
-        <td><%= link_to 'Destroy', empleado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="btn btn-primary btn white-text">
+          <%= link_to 'Mostrar', empleado, :class => "button" %></div></td>
+        <td>
+        <div class="btn btn-warning btn white-text">
+          <%= link_to 'Editar', edit_empleado_path(empleado), :class => "button"%></td>
+        <td>
+        <div class="btn btn-danger btn white-text">
+          <%= link_to 'Destruir', empleado, method: :delete, data: { confirm: 'Estas seguro?' },:class => "button" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Empleado', new_empleado_path %>
+<div class="btn btn-success btn white-text">
+<%= link_to 'Nuevo Empleado', new_empleado_path, :class => "button" %>
+</div>

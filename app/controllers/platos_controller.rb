@@ -15,6 +15,7 @@ class PlatosController < ApplicationController
   # GET /platos/new
   def new
     @plato = Plato.new
+    @insumos = Insumo.all
   end
 
   # GET /platos/1/edit
@@ -25,6 +26,7 @@ class PlatosController < ApplicationController
   # POST /platos.json
   def create
     @plato = Plato.new(plato_params)
+    @plato.insumos = params[:insumos]
 
     respond_to do |format|
       if @plato.save
@@ -69,6 +71,6 @@ class PlatosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def plato_params
-      params.require(:plato).permit(:nombre, :precio, :tipo, :descripcion, :cantidad)
+      params.require(:plato).permit(:nombre, :precio, :tipo, :descripcion, :cantidad, :insumos)
     end
 end

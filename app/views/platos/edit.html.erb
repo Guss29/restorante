@@ -1,6 +1,32 @@
 <h1>Editing Plato</h1>
 
-<%= render 'form', plato: @plato %>
+<%= simple_form_for(@plato) do |f| %>
+  <% if @plato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plato.errors.count, "error") %> prohibited this plato from being saved:</h2>
+
+      <ul>
+      <% plato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :nombre %>
+  <%= f.input :precio %>
+  <%= f.input :tipo, :as => :select, :collection => [["Principal", "Principal" ], ["Postre", "Postre"],["Entrada", "Entrada"]] %>
+  <%= f.input :descripcion %>
+  <%= f.input :cantidad %>
+      <label>Ingredientes</label>
+      <% @plato.insumos.each do |insumo| %>
+        <div>
+          <%= check_box_tag "insumos[]", insumo.id =%> <%= insumo.nombre =%>
+        </div>
+      <% end %>
+  <%= f.button :submit %>
+<% end %>
+
 
 <%= link_to 'Show', @plato %> |
 <%= link_to 'Back', platos_path %>

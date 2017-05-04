@@ -2,7 +2,7 @@
 
 <h1>Venta</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Numero</th>
@@ -28,14 +28,19 @@
         <td><%= ventum.total %></td>
         <td><%= ventum.fecha %></td>
         <td><%= ventum.pedido %></td>
-        <td><%= link_to 'Show', ventum %></td>
-        <td><%= link_to 'Edit', edit_ventum_path(ventum) %></td>
-        <td><%= link_to 'Destroy', ventum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <<div class="btn btn-primary btn white-text">
+          <%= link_to 'Mostrar', ventum, :class => "button" %></div></td>
+        <td>
+        <div class="btn btn-warning btn white-text">
+          <%= link_to 'Editar', edit_ventum_path(ventum), :class => "button"%></td>
+        <td>
+        <div class="btn btn-danger btn white-text">
+          <%= link_to 'Destruir', ventum, method: :delete, data: { confirm: 'Estas seguro?' },:class => "button" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'New Ventum', new_ventum_path %>
+<div class="btn btn-success btn white-text">
+<%= link_to 'Nueva Venta', new_ventum_path,:class => "button" %>
+</div>

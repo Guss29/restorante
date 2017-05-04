@@ -1,50 +1,41 @@
 html,body{
-	margin: 0px;
-}
-.btn{
-	background-color: inherit;
-	border: none;
-	outline: none;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-size: 1.2em;
-	padding: 10px 12px;
+  margin: 0px;
 }
 .no-margin{
-	margin: 0px;
+  margin: 0px;
 }
 .no-list{
-	list-style: none;
+  list-style: none;
 }
 a,a.visited{
-	color: inherit !important;
-	text-decoration: none;
+  color: inherit !important;
+  text-decoration: none;
 }
 .text-left{
-	text-align: left;
+  text-align: left;
 }
 .be-red{
-	background-color: #E74C3C;
+  background-color: #E74C3C;
 }
 .red{
-	color: #E74C3C !important;
+  color: #E74C3C !important;
 }
 .white{
-	color: #ECF0F1;
+  color: #ECF0F1;
 }
 .large-padding{
 
-	padding: 10px 5px;
+  padding: 10px 5px;
 }
 .field,.top-space,.actions{
-	margin-top:1em;
+  margin-top:1em;
 }
 .form-control{
-	border: none;
-	border-bottom: 1px solid;
-	outline: none;
-	width: 100%;
-	display: block;
-	padding: 10px 0px;
-	font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
 }

@@ -19,6 +19,12 @@ gem 'chosen-rails'
 
 gem 'formtastic', '~> 3.0'
 
+gem 'simple_form'
+
+gem 'cocoon'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

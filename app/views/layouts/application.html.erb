@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class='no-js' lang=''>
+<html lang=''>
   <head>
     <meta charset='utf-8'>
     <meta content='ie=edge' http-equiv='x-ua-compatible'>
-    <title>La mejor comida en Restauranto</title>
+    <title>La mejor comida en Restaurant</title>
     <meta content='Come rico y barato en el mejor rastaurante de la ciudad, servicio de primera. Los mejores tacos de la ciudad.' name='description'>
     <meta content='6' data-name='image_counter'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
@@ -19,15 +19,23 @@
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'%>
     <%= stylesheet_link_tag 'modernizr-2.8.3.min.js'%>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag   'application', 'formtastic', 'formtastic_changes', :cache => "base", media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= render "partials/navigation" %>
+      <div class='video-container'>
+      <!-- Width and height attrs are ok on media and images -->
+      <%= image_tag("bbq.jpg", :alt => "Logo Restaurante Facilito",  width:'1280')%>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%= render "partials/navigation" %>
+    <div class="row">
+    <div class="col-md-5 center-block no-float white-text top-space--2">
+        <%= yield %>
+    </div>
+    </div>    
   </body>
 </html>
 

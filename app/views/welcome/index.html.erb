@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-  <head>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css'%>
-    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'%>
-    <%= stylesheet_link_tag 'modernizr-2.8.3.min.js'%>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <div class='video-container'>
-      <!-- Width and height attrs are ok on media and images -->
-      <%= video_tag("mp4/bbq.mp4", :size => "720x1280", :controls => true, :autoplay => true, :loop => true)%>
-    </div>
     <div class='row middle-xs full-height center-xs up relative'>
       <div class='col-xs-12'>
         <div class='box main-content'>
           <%= image_tag("logo.png", :alt => "Logo Restaurante Facilito",  width:'200')%>
-          <h1 class='white-text title lobster no-margin'>Restaurante</h1>
+          <h1 class='white-text title lobster no-margin'>Restaurante Bianco</h1>
           <p class='white-text slim top-space' id='is_open'>
             <span class='glyphicon glyphicon-time'></span>
             <span class='text'>Abierto ahora</span>
@@ -26,4 +11,3 @@
         </div>
       </div>
     </div>
-  </body>

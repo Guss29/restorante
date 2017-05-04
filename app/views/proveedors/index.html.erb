@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Proveedors</h1>
+<h1>Proveedores</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Rut</th>
@@ -22,14 +22,19 @@
         <td><%= proveedor.direccion %></td>
         <td><%= proveedor.telefono %></td>
         <td><%= proveedor.mail %></td>
-        <td><%= link_to 'Show', proveedor %></td>
-        <td><%= link_to 'Edit', edit_proveedor_path(proveedor) %></td>
-        <td><%= link_to 'Destroy', proveedor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div class="btn btn-primary btn white-text">
+          <%= link_to 'Mostrar', proveedor, :class => "button" %></div></td>
+        <td>
+        <div class="btn btn-warning btn white-text">
+          <%= link_to 'Editar', edit_proveedor_path(proveedor), :class => "button"%></td>
+        <td>
+        <div class="btn btn-danger btn white-text">
+          <%= link_to 'Destruir', proveedor, method: :delete, data: { confirm: 'Estas seguro?' },:class => "button" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'New Proveedor', new_proveedor_path %>
+<div class="btn btn-success btn white-text">
+<%= link_to 'Nuevo Proveedor', new_proveedor_path,:class => "button" %>
+</div>
